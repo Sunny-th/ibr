@@ -58,7 +58,6 @@ input:focus, select:focus {
 /* Improved Checkbox Styling (Fix Spacing and Alignment) */
 .checkbox-container {
     display: flex;
-    justify-content: flex-start;  /* Aligns checkboxes with the left */
     align-items: center;
     gap: 5px;  /* Adds space between checkbox and label */
     margin-bottom: 5px;  /* Less margin to fix spacing issue */
