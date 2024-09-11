@@ -7,124 +7,22 @@
 
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: #f5f8fa;
-    color: #333;
-    line-height: 1.6;
+    background: linear-gradient(120deg, #d4e0f4, #f0f8ff);
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
 }
 
-/* Container for the calculator */
+/* Card Layout */
 #app {
     background-color: white;
-    padding: 40px;
-    border-radius: 16px;
-    box-shadow: 0px 12px 36px rgba(0, 0, 0, 0.1);
-    max-width: 500px;
+    padding: 50px;
+    border-radius: 25px;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.15);
+    max-width: 550px;
     width: 100%;
-    margin: 20px;
-}
-
-/* Headings */
-h1 {
-    color: #09a9fa;
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 30px;
-    text-align: center;
-    letter-spacing: 0.5px;
-}
-
-/* Input Fields */
-input, select {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 20px;
-    border: 2px solid #e0e0e0;
-    border-radius: 8px;
-    font-size: 16px;
-    color: #333;
-    transition: border-color 0.3s;
-}
-
-input:focus, select:focus {
-    border-color: #09a9fa;
-    outline: none;
-    box-shadow: 0 0 10px rgba(9, 169, 250, 0.2);
-}
-
-/* Improved Checkbox Styling (Fix Spacing and Alignment) */
-.checkbox-container {
-    display: flex;
-    align-items: center;
-    gap: 5px;  /* Adds space between checkbox and label */
-    margin-bottom: 5px;  /* Less margin to fix spacing issue */
-    font-size: 16px;
-}
-
-.checkbox-container label {
-    color: #333;
-    cursor: pointer;
-    margin: 0;  /* Remove any extra margin */
-}
-
-.checkbox-container input[type="checkbox"] {
-    width: 20px;  /* Larger checkbox for better visibility */
-    height: 20px;
-}
-
-/* Buttons */
-button {
-    background-color: #0073e6;
-    color: white;
-    padding: 15px;
-    border: none;
-    border-radius: 8px;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    width: 100%;
-    margin-top: 20px;
-}
-
-button:hover {
-    background-color: #005bb5;
-    box-shadow: 0px 8px 16px rgba(0, 115, 230, 0.3);
-}
-
-button:active {
-    background-color: #004f9e;
-    box-shadow: 0px 4px 8px rgba(0, 115, 230, 0.2);
-}
-
-/* Quote Display */
-#quote {
-    color: #0073e6;
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 30px;
     text-align: center;
 }
 
-/* Breakdown List */
-#breakdown {
-    color: #555;
-    font-size: 15px;
-    margin-top: 20px;
-    list-style: none;
-    padding-left: 0;
-}
-
-#breakdown li {
-    margin-bottom: 10px;
-    border-left: 3px solid #09a9fa;
-    padding-left: 10px;
-    transition: all 0.2s ease-in-out;
-}
-
-#breakdown li:hover {
-    background-color: #f0f8ff;
-}
+/
