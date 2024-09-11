@@ -9,10 +9,14 @@
 <body>
     <div id="app">
         <h1>Insurance Quote Calculator</h1>
+
+        <!-- Age Input -->
         <div>
             <label for="age">Age: </label>
             <input type="number" id="age" placeholder="Enter your age">
         </div>
+
+        <!-- Plan Selection -->
         <div>
             <label for="plan">Plan: </label>
             <select id="plan">
@@ -23,15 +27,18 @@
                 <option value="Diamond">Diamond</option>
             </select>
         </div>
+
+        <!-- Country of Residence -->
         <div>
-            <label for="countryOfResidence">Country of Residence: </label> <!-- Added this field -->
+            <label for="countryOfResidence">Country of Residence: </label>
             <select id="countryOfResidence">
                 <option value="Thailand">Thailand</option>
                 <option value="Indonesia">Indonesia</option>
                 <option value="Hong Kong">Hong Kong</option>
-                <option value="Other">Other</option>
             </select>
         </div>
+
+        <!-- Area of Cover Selection -->
         <div>
             <label for="areaOfCover">Area of Cover: </label>
             <select id="areaOfCover">
@@ -42,6 +49,8 @@
                 <option value="Africa">Africa</option>
             </select>
         </div>
+
+        <!-- Outpatient Co-pay Selection -->
         <div>
             <label for="outpatientCopay">Outpatient Co-pay: </label>
             <select id="outpatientCopay">
@@ -50,6 +59,8 @@
                 <option value="20% Co-Pay">20% Co-Pay</option>
             </select>
         </div>
+
+        <!-- Inpatient Deductible Selection -->
         <div>
             <label for="inpatientDeductible">Inpatient Deductible: </label>
             <select id="inpatientDeductible">
@@ -61,15 +72,26 @@
                 <option value="$10,000">$10,000</option>
             </select>
         </div>
+
+        <!-- Optional Coverage: Dental -->
         <div>
-            <input type="checkbox" id="dental"> <label for="dental">Dental</label>
+            <input type="checkbox" id="dental"> 
+            <label for="dental">Dental</label>
         </div>
+
+        <!-- Optional Coverage: Maternity -->
         <div>
-            <input type="checkbox" id="maternity"> <label for="maternity">Maternity</label>
+            <input type="checkbox" id="maternity"> 
+            <label for="maternity">Maternity</label>
         </div>
+
+        <!-- Optional Coverage: Optical -->
         <div>
-            <input type="checkbox" id="optical"> <label for="optical">Optical</label>
+            <input type="checkbox" id="optical"> 
+            <label for="optical">Optical</label>
         </div>
+
+        <!-- Payment Frequency Selection -->
         <div>
             <label for="paymentFrequency">Payment Frequency: </label>
             <select id="paymentFrequency">
@@ -78,6 +100,8 @@
                 <option value="Quarterly">Quarterly</option>
             </select>
         </div>
+
+        <!-- Calculate Premium Button -->
         <button id="calculate">Calculate Premium</button>
 
         <!-- Area to display the results -->
@@ -85,6 +109,7 @@
         <ul id="breakdown"></ul>
     </div>
 
-    <script src="main.js"></script> <!-- Ensure this points to your main.js -->
+    <!-- Link to the JavaScript file -->
+    <script src="main.js"></script>
 </body>
 </html>
