@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    background: linear-gradient(120deg, #f5f8fa, #e9eff5);
+    background: linear-gradient(135deg, #e9eff5, #dfe7f3);
     color: #333;
     line-height: 1.6;
     display: flex;
@@ -16,24 +16,24 @@ body {
     min-height: 100vh;
 }
 
-/* Container for the calculator */
+/* Card Container */
 #app {
     background-color: white;
-    padding: 50px;
-    border-radius: 20px;
-    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.1);
-    max-width: 550px;
+    padding: 40px;
+    border-radius: 24px;
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.1); /* Softer shadow for elegance */
+    max-width: 500px;
     width: 100%;
     margin: 20px;
-    text-align: center;
+    text-align: center;  /* Center the form content */
 }
 
 /* Headings */
 h1 {
-    color: #09a9fa;
-    font-size: 32px;
+    color: #0073e6;
+    font-size: 30px;
     font-weight: bold;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
     letter-spacing: 0.5px;
 }
 
@@ -41,37 +41,39 @@ h1 {
 input, select {
     width: 100%;
     padding: 14px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     border: 2px solid #e0e0e0;
     border-radius: 10px;
     font-size: 16px;
     color: #333;
-    background-color: #fafafa;
-    transition: border-color 0.3s, box-shadow 0.3s;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 input:focus, select:focus {
-    border-color: #09a9fa;
+    border-color: #0073e6;
     outline: none;
-    box-shadow: 0 0 15px rgba(9, 169, 250, 0.2);
+    box-shadow: 0 0 12px rgba(0, 115, 230, 0.2);
 }
 
 /* Checkbox Styling */
 .checkbox-container {
     display: flex;
     align-items: center;
-    gap: 10px;
+    justify-content: flex-start;  /* Aligns checkboxes left */
     margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.checkbox-container input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
 }
 
 .checkbox-container label {
     color: #333;
     cursor: pointer;
-}
-
-.checkbox-container input[type="checkbox"] {
-    width: 20px;
-    height: 20px;
 }
 
 /* Buttons */
@@ -86,11 +88,12 @@ button {
     cursor: pointer;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
     width: 100%;
+    margin-top: 25px;
 }
 
 button:hover {
     background-color: #005bb5;
-    box-shadow: 0px 10px 20px rgba(0, 115, 230, 0.3);
+    box-shadow: 0px 8px 16px rgba(0, 115, 230, 0.2);
 }
 
 button:active {
@@ -109,7 +112,7 @@ button:active {
 /* Breakdown List */
 #breakdown {
     color: #555;
-    font-size: 16px;
+    font-size: 15px;
     margin-top: 25px;
     list-style: none;
     padding-left: 0;
@@ -124,4 +127,9 @@ button:active {
 
 #breakdown li:hover {
     background-color: #f0f8ff;
+}
+
+/* Improved Form Layout */
+form div {
+    margin-bottom: 20px;
 }
