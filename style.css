@@ -1,4 +1,4 @@
-/* Base Styling */
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
@@ -6,9 +6,9 @@
 }
 
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;  /* Clean modern font */
-    background-color: #f5f8fa;  /* Soft off-white background for sophistication */
-    color: #333;  /* Professional dark gray for text */
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f5f8fa;
+    color: #333;
     line-height: 1.6;
     display: flex;
     justify-content: center;
@@ -16,40 +16,33 @@ body {
     min-height: 100vh;
 }
 
-/* Container */
+/* Container for the calculator */
 #app {
-    background-color: white;  /* Pure white card for content */
-    padding: 40px 30px;
-    border-radius: 12px;  /* Smooth rounded corners */
-    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);  /* Subtle, elegant shadow */
-    max-width: 600px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0px 12px 36px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
     width: 100%;
-    text-align: left;
     margin: 20px;
 }
 
 /* Headings */
 h1 {
-    color: #09a9fa;  /* Brand color for heading */
+    color: #09a9fa;
     font-size: 28px;
     font-weight: bold;
-    margin-bottom: 20px;
-    letter-spacing: 1px;
+    margin-bottom: 30px;
+    text-align: center;
+    letter-spacing: 0.5px;
 }
 
-h2 {
-    color: #0073e6;  /* Darker blue for subheadings */
-    font-size: 22px;
-    margin-top: 30px;
-    margin-bottom: 15px;
-}
-
-/* Input and Select Fields */
+/* Input Fields */
 input, select {
     width: 100%;
-    padding: 15px;
+    padding: 12px;
     margin-bottom: 20px;
-    border: 2px solid #e0e0e0;  /* Light border for clean lines */
+    border: 2px solid #e0e0e0;
     border-radius: 8px;
     font-size: 16px;
     color: #333;
@@ -57,16 +50,37 @@ input, select {
 }
 
 input:focus, select:focus {
-    border-color: #09a9fa;  /* Highlight on focus */
+    border-color: #09a9fa;
     outline: none;
     box-shadow: 0 0 10px rgba(9, 169, 250, 0.2);
 }
 
+/* Improved Checkbox Styling (Fix Spacing and Alignment) */
+.checkbox-container {
+    display: flex;
+    justify-content: flex-start;  /* Aligns checkboxes with the left */
+    align-items: center;
+    gap: 10px;  /* Adds space between checkbox and label */
+    margin-bottom: 10px;  /* Less margin to fix spacing issue */
+    font-size: 16px;
+}
+
+.checkbox-container label {
+    color: #333;
+    cursor: pointer;
+    margin: 0;  /* Remove any extra margin */
+}
+
+.checkbox-container input[type="checkbox"] {
+    width: 20px;  /* Larger checkbox for better visibility */
+    height: 20px;
+}
+
 /* Buttons */
 button {
-    background-color: #0073e6;  /* Darker blue for call to action */
+    background-color: #0073e6;
     color: white;
-    padding: 15px 0;
+    padding: 15px;
     border: none;
     border-radius: 8px;
     font-size: 18px;
@@ -74,30 +88,32 @@ button {
     cursor: pointer;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
     width: 100%;
+    margin-top: 20px;
 }
 
 button:hover {
-    background-color: #005bb5;  /* Slightly darker blue on hover */
-    box-shadow: 0px 6px 12px rgba(0, 115, 230, 0.3);  /* Glow effect on hover */
+    background-color: #005bb5;
+    box-shadow: 0px 8px 16px rgba(0, 115, 230, 0.3);
 }
 
 button:active {
-    background-color: #004f9e;  /* Even darker when clicked */
-    box-shadow: 0px 4px 8px rgba(0, 115, 230, 0.2);  /* Pressed effect */
+    background-color: #004f9e;
+    box-shadow: 0px 4px 8px rgba(0, 115, 230, 0.2);
 }
 
 /* Quote Display */
 #quote {
-    color: #0073e6;  /* Elegant blue for quote */
+    color: #0073e6;
     font-size: 20px;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 30px;
+    text-align: center;
 }
 
-/* Breakdown */
+/* Breakdown List */
 #breakdown {
-    color: #555;  /* Softer gray for breakdown text */
-    font-size: 14px;
+    color: #555;
+    font-size: 15px;
     margin-top: 20px;
     list-style: none;
     padding-left: 0;
@@ -105,37 +121,11 @@ button:active {
 
 #breakdown li {
     margin-bottom: 10px;
-    border-left: 3px solid #09a9fa;  /* Brand color left border */
+    border-left: 3px solid #09a9fa;
     padding-left: 10px;
     transition: all 0.2s ease-in-out;
 }
 
 #breakdown li:hover {
-    background-color: #f0f8ff;  /* Light background on hover */
-}
-
-/* Optional Fields */
-label {
-    display: block;
-    font-size: 16px;
-    margin-bottom: 5px;
-    color: #333;
-    font-weight: 500;
-}
-
-/* Checkbox Styling */
-input[type="checkbox"] {
-    margin-right: 10px;
-}
-
-input[type="checkbox"] + label {
-    font-size: 16px;
-    color: #333;
-    vertical-align: middle;
-    cursor: pointer;
-}
-
-/* Form Spacing */
-form div {
-    margin-bottom: 20px;
+    background-color: #f0f8ff;
 }
