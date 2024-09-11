@@ -1,4 +1,3 @@
-// Insurance Premium Calculation Data
 const premiumRates = {
   'Emerald': {
     '0-17': 959, '18-24': 1490, '25-29': 1851, '30-34': 1992, '35-39': 2175,
