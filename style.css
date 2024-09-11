@@ -60,8 +60,8 @@ input:focus, select:focus {
     display: flex;
     justify-content: flex-start;  /* Aligns checkboxes with the left */
     align-items: center;
-    gap: 10px;  /* Adds space between checkbox and label */
-    margin-bottom: 10px;  /* Less margin to fix spacing issue */
+    gap: 5px;  /* Adds space between checkbox and label */
+    margin-bottom: 5px;  /* Less margin to fix spacing issue */
     font-size: 16px;
 }
 
